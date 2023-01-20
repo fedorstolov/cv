@@ -3,20 +3,22 @@
   <head>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(92078643, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
+  ym(92078643, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/92078643" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,61 +29,57 @@
     <title>Document</title>
   </head>
   <body>
+     <!-- nav -->
+   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <div class="wrapper">
+      <input type="checkbox" id="btn" hidden>
+      <label for="btn" class="menu-btn">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+      </label>
+      <nav id="sidebar">
+         <div class="title">
+            navigation
+         </div>
+         <ul class="list-items">
+          <li><a href="main" target="_self"><i class="fas fa-home"></i>main</a></li>
+          <li><a href="#aboutme" target="_self"><i class="fas fa-user"></i>about me</a></li>
+          <li><a href="#abitmore" target="_self"><i class="fas fa-signal"></i>a bit more</a></li>
+          <li><a href="#" target="_self"><i class="fas fa-comments"></i>languages</a></li>
+          <li><a href="#contacts" target="_self"><i class="fas fa-phone-square"></i>contacts</a></li>
+          
+            <div class="icons">
+               <a href="https://www.facebook.com/fedyaj"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/fedyaj/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/fedor-stolov-5754861b2"><i class="fab fa-linkedin"></i></a>
+               <a href="https://github.com/fedorstolov"><i class="fab  fa-github"></i></a>
+            </div>
+         </ul>
+      </nav>
+   </div>
+
+ <!-- nav -->
+    <base target="_blank">
     <header class="header">
-      <img src="./avatar.png" alt="avatar" class="header__avatar" />
+      <img src="./avatar.png" alt="avatar" class="header__avatar"  />
       
-      <h1 class="header__title">Fedor Stolov</h1>
+      <h1 class="header__title" id="main">Fedor Stolov</h1>
     
     </header>
     <main>
-  
+      
       <section class="links">
-        <h2 class="links__header">About me</h2>
+        <h2 class="links__header" id="aboutme">about me</h2>
         <ul class="links__container">
           <li class="links__link">
             <p class="links__title">A calm and responsible workaholic with 10 years of experience in events who is now trying to become a QA.<br> The team is essential. Mutual respect between the parties and simple human adequacy can work miracles. <br>Enjoying the process is as important as achieving the outcome</p>
           </ul>
         </li>
         </section>
+      
       <section class="links">
-        <h2 class="links__header">Contacts</h2>
-        <ul class="links__container">
-          <li class="links__link">
-            <img src="./logotg.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">Telegram</p>
-            <a class="linsk__link" href="http://t.me/fedyaj">fedyaj</a>
-          </li>
-          <li class="links__link">
-            <img src="./logogmail.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">E-mail</p>
-            <a class="linsk__link" href="mailto:fedyaj@gmail.com"
-              >fedyaj@gmail.com</a
-            >
-          </li>
-          <li class="links__link">
-            <img src="./logofb.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">Facebook</p>
-            <a class="linsk__link" href="http://fb.com/fedyaj">fedyaj</a>
-          </li>
-           <li class="links__link">
-            <img src="./logoinst.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">Instagram</p>
-            <a class="linsk__link" href="https://www.instagram.com/fedyaj/" >fedyaj</a>
-          </li>
-          <li class="links__link">
-            <img src="./logolink.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">LinkedIn</p>
-            <a class="linsk__link" href="https://www.linkedin.com/in/fedor-stolov-5754861b2/">Fedor Stolov</a>
-          </li>
-          <li class="links__link">
-            <img src="./logogh.png" alt="telegram" class="body_icon"  />
-            <p class="links__title">Github</p>
-            <a class="linsk__link" href="https://github.com/fedorstolov">fedorstolov</a>
-          </li>
-        </ul>
-      </section>
-      <section class="links">
-        <h2 class="links__header">Other stuff</h2>
+        <h2 class="links__header" id="abitmore">a bit more</h2>
         <ul class="links__container">
           <li class="links__link">
             <p class="links__title">Obtaining</p>
@@ -93,7 +91,7 @@
           </li>
           <li class="links__link">
             <p class="links__title">Learning</p>
-            <a class="linsk__link" href="https://www.duolingo.com/profile/Fedyaj">new laguages not only in Duolingo</a>
+            <a class="linsk__link" href="https://www.duolingo.com/profile/Fedyaj">new languages not only in Duolingo</a>
           </li>
           <li class="links__link">
             <p class="links__title">Looking</p>
@@ -101,10 +99,24 @@
         </ul>
       </section>
     
-     
+    <section class="links">
+        <h2 id="contacts">contacts</h2>
+        <div class="contacts_container">
+          <ul>
+           <li> <a href="http://t.me/fedyaj"><i class="fab fa-telegram"></i></a></li> 
+           <li> <a href="https://www.facebook.com/fedyaj"><i class="fab fa-facebook-f"></i></a></li>
+           <li> <a href="mailto:fedyaj@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+           <li> <a href="https://www.instagram.com/fedyaj/"><i class="fab fa-instagram"></i></a></li>
+           <li> <a href="https://www.linkedin.com/in/fedor-stolov-5754861b2"><i class="fab fa-linkedin"></i></a></li>
+           <li> <a href="https://github.com/fedorstolov"><i class="fab  fa-github"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <br><br><br>
+
     </main>
     <footer>
-      <button type = "button" class="button-link" href=""> Random quote </button>
+      <button type = "button" class="button-link" href=""> woththless button</button>
     </footer>
     <script type="text/javascript" src="js.js"></script>
   </body>
